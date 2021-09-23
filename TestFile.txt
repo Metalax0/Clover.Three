@@ -20,7 +20,27 @@
  </div>
  
  <div> //Sandesh DIV
-    // Sandesh ko code yeta lekha  
+    <pre>
+      <code>
+        x = 5;
+        y = 6;
+        z = x + y;
+    </code>
+   </pre> 
+    <pre>
+      <code>
+        x = 5;
+        y = 6;
+        z = x + y;
+    </code>
+   </pre>
+    <pre>
+      <code>
+        x = 5;
+        y = 6;
+        z = x + y;
+    </code>
+   </pre>
  </div>
  
  <div> //Umesh DIV
