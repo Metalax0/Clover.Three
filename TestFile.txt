@@ -7,16 +7,7 @@
  <body>
  
  <div> //Avash DIV
-   // Avash ko code yeta lekha
-   // Avash ko code yeta lekha
-   // Avash ko code yeta lekha
-   // Avash ko code yeta lekha
-   // Avash ko code yeta lekha
-   // Avash ko code yeta lekha
-   // Avash ko code yeta lekha
-   // Avash ko code yeta lekha
-   // Avash ko code yeta lekha
-   // Avash ko code yeta lekha
+   // This is code
  </div>
  
  <div> //Sandesh DIV
