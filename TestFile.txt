@@ -1,60 +1,26 @@
 <html>
 <head>
-  <title>
-    Test ONE
-  </title>
- </head>
- <body>
+	<title>
+		Test Two
+	</title>
+</head>
+<body>
  
- <div> //Avash DIV
-   // Avash ko code yeta lekha
-   // Avash ko code yeta lekha
-   // Avash ko code yeta lekha
-   // Avash ko code yeta lekha
-   // Avash ko code yeta lekha
-   // Avash ko code yeta lekha
-   // Avash ko code yeta lekha
-   // Avash ko code yeta lekha
-   // Avash ko code yeta lekha
-   // Avash ko code yeta lekha
- </div>
+<div> #- Avash -#
+   
+</div>
  
- <div> //Sandesh DIV
-    <pre>
-      <code>
-        x = 5;
-        y = 6;
-        z = x + y;
-    </code>
-   </pre> 
-    <pre>
-      <code>
-        x = 5;
-        y = 6;
-        z = x + y;
-    </code>
-   </pre>
-    <pre>
-      <code>
-        x = 5;
-        y = 6;
-        z = x + y;
-    </code>
-   </pre>
- </div>
+<div> #- Sandesh -#
+    
+</div>
  
- <div> //Umesh DIV
-  // <h1> #handsome </h1>
-  // <h1> #handsome </h1>
-  // <h1> #handsome </h1>
-  // <h1> #handsome </h1>
-  // <h1> #handsome </h1>
-  // <h1> #handsome </h1>
-  // <h1> #handsome </h1>
-  // <h1> #handsome </h1>
-  // <h1> #handsome </h1>
-  // <h1> #handsome </h1>
- </div>
+<div> #- Sampanna -#
+
+</div>
+
+<div> #- Umesh -#
+
+</div>
  
- </body>
- </html>
+</body>
+</html>
