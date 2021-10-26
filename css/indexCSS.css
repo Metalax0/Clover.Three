@@ -1,0 +1,144 @@
+/*
+------
+Colors
+------
+light green - 66AF8D
+dark blue/grey - 354E5B
+bright yellow - F2CE4E
+light orange - F2A250
+bright orange/light red - DD5B48
+
+orange (inspired) - F79868
+lighter orange - FFA37B
+*/
+
+/* 
+-------
+Testing and Notes
+-------
+*/
+
+/* 
+---------------------------
+Actual CSS Starts from here
+---------------------------
+*/
+
+/* Applying css to body*/
+body
+{
+	background-color: #FFA37B;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 1.5%;
+	gap: 40px;
+}
+
+/* Adjusting logo (navbar) dimension */
+nav img
+{
+	width: 3vw;
+	height: 5vh;
+}
+
+nav a
+{
+	font-family: 'Prompt', sans-serif;
+	/*font-size: 113%;*/
+	font-size: 1.2vw;
+	color: white;
+	text-decoration: none;
+}
+
+main
+{
+	display: flex;
+	padding: 0.7%;
+	gap: 50px;
+}
+
+footer
+{
+	position: fixed;
+	bottom: 1.5vh;
+	left: 40vw;
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Adjusting logo (footer) dimension */
+footer img
+{
+	width: 2vw;
+	height: 4vh;
+}
+
+main img
+{
+	outline: 2px solid black;
+}
+
+/* Applying style to entire navigation bar*/
+.flex-navbar
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.7% 1.4%;
+}
+
+/* Applying flex property to navigation menu items*/
+.flex-navmenu
+{
+	display: flex;
+	gap: 60px ;
+}
+
+.title-heading
+{
+	font-family: 'Sigmar One', cursive;
+	font-size: 6.5vw;
+}
+
+.column-left, .column-right
+{
+	/*outline: 3px solid green;*/
+}
+
+.column-left
+{
+	display: flex;
+	flex-direction: column;
+	gap:20px;
+}
+
+.title-description
+{
+	font-family: 'Prompt', sans-serif;
+	font-size: 1.3vw;
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.footer-text
+{
+	font-family: 'Prompt', sans-serif;
+	font-size: 1.1vw;
+	text-align: center;
+}
+
+main img
+{
+	width: 50.3vw;
+	height: 60.3vh;
+}
+
+h1,p
+{
+	margin: 0px;
+	padding: 0px;
+}
+
