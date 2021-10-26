@@ -2,28 +2,19 @@
 	outline: 0px solid grey;
 	display: flex;
 	flex-direction: column;
+	padding: 1.5%;
 	gap: 20px;
 
 }
 
-nav{
-	/*outline: 2px solid black;*/
-	padding:20px;
-
-	}
-
-div{
-	outline: 2px solid red;
-	padding:20px;
-
-
+body{
+	background-color: #FFA37B;
 }
 
-footer{
-	/*outline: 2px solid black;*/
-	padding: 20px;
-	/*position: fixed;
-	bottom: 0;*/
+div{
+	/*outline: 2px solid red;*/
+	/*padding:20px;*/
+
 
 }
 
@@ -61,3 +52,74 @@ textarea{
 	height: 50vh;
 	resize: none;
 }
+
+/*
+-----------------
+Navbar and Footer 
+-----------------
+*/
+
+/* Adjusting logo (navbar) dimension */
+nav img
+{
+	width: 3vw;
+	height: 5vh;
+}
+
+nav a
+{
+	font-family: 'Prompt', sans-serif;
+	/*font-size: 113%;*/
+	font-size: 1.2vw;
+	color: white;
+	text-decoration: none;
+}
+
+nav{
+	/*background-color: green;*/
+}
+
+footer
+{
+	position: fixed;
+	bottom: 1.5vh;
+	left: 40vw;
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Adjusting logo (footer) dimension */
+footer img
+{
+	width: 2vw;
+	height: 4vh;
+}
+
+/* Applying style to entire navigation bar*/
+.flex-navbar
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.7% 1.4%;
+}
+
+/* Applying flex property to navigation menu items*/
+.flex-navmenu
+{
+	display: flex;
+	gap: 60px ;
+}
+
+.footer-text
+{
+	font-family: 'Prompt', sans-serif;
+	font-size: 1.1vw;
+	text-align: center;
+}
+
+
+
+
