@@ -1,0 +1,63 @@
+.flex-container{
+	outline: 0px solid grey;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+
+}
+
+nav{
+	/*outline: 2px solid black;*/
+	padding:20px;
+
+	}
+
+div{
+	outline: 2px solid red;
+	padding:20px;
+
+
+}
+
+footer{
+	/*outline: 2px solid black;*/
+	padding: 20px;
+	/*position: fixed;
+	bottom: 0;*/
+
+}
+
+main{
+	/*outline: 2px solid black;*/
+	padding:20px;
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+
+
+}
+
+.flex-item-left{
+	justify-content: left;
+	
+}
+
+.flex-item-right{
+
+}
+
+.title-heading{
+	font-family: 'Kaushan Script', cursive;
+	outline: 0px;
+	font-size: 40px;
+}
+
+.title-heading-description{
+
+}
+
+textarea{
+	width: 50vw;
+	height: 50vh;
+	resize: none;
+}
