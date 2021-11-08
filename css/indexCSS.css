@@ -3,20 +3,29 @@
 Colors
 ------
 light green - 66AF8D
-dark blue/grey - 354E5B
 bright yellow - F2CE4E
 light orange - F2A250
 bright orange/light red - DD5B48
+lighter orange - FFA37B (current background color)
 
-orange (inspired) - F79868
-lighter orange - FFA37B
+Current Colors:
+Half Title - Light Green - 66AF8D
+background  - Light Orange - FFA37B
+Navbar Text - White - White
 */
 
-/* 
--------
+
+/*-------
 Testing and Notes
--------
-*/
+-------*/
+
+/* DARK GREEN -#0FFF95*/
+/* LIGHT BLUE - #8CFBDE*/
+
+div,h1,h2,p
+{
+	/*outline: 1px solid white;*/
+}
 
 /* 
 ---------------------------
@@ -24,15 +33,29 @@ Actual CSS Starts from here
 ---------------------------
 */
 
-/* Applying css to body*/
-body
+/* Applying css to body and entire html*/
+body,html
 {
-	background-color: #FFA37B;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+/* Applying style to entire navigation bar*/
+nav
+{
+	top: 1%;
+	left: 3%;
+	width: 91.7%;
+	position: fixed;
+	background-color: rgb(0,0,0,0.7);
+	border: 0px solid white;
+	border-radius: 20px;
+
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 1.5%;
-	gap: 40px;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.2% 1% 0;
 }
 
 /* Adjusting logo (navbar) dimension */
@@ -42,29 +65,54 @@ nav img
 	height: 5vh;
 }
 
+/* Applying style to nagivation bar menu items */
 nav a
 {
 	font-family: 'Prompt', sans-serif;
-	/*font-size: 113%;*/
+	/*font-family: 'Megrim', cursive;*/
 	font-size: 1.2vw;
 	color: white;
 	text-decoration: none;
 }
 
-main
+/* Applying style to main content (nav-main content-footer) */
+section
 {
 	display: flex;
-	padding: 0.7%;
-	gap: 50px;
+	flex-direction: column;
+	padding: 0% 1%;
+	gap: 10vh;
 }
 
+/* Reseting margin and padding property of h1 and p to 0 */
+h1,h2,p
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+p b{
+	color: #0FFF95 ;
+}
+
+/* Applying style to "Scroll down" text */
+label
+{
+	font-family: 'Prompt', sans-serif;
+	font-size: 1.5vw;
+	color: white;
+	padding: 0.5% 5%;
+	outline: 2px solid white;
+}
+
+/* Styling footer */
 footer
 {
 	position: fixed;
-	bottom: 1.5vh;
+	bottom: 1.5vw;
 	left: 40vw;
 	display: flex;
-	gap: 20px;
+	gap: 2vh;
 	justify-content: center;
 	align-items: center;
 }
@@ -72,73 +120,149 @@ footer
 /* Adjusting logo (footer) dimension */
 footer img
 {
-	width: 2vw;
+	width: 3vw;
 	height: 4vh;
 }
 
-main img
-{
-	outline: 2px solid black;
-}
-
-/* Applying style to entire navigation bar*/
-.flex-navbar
+/* Styling First Main Content (pre scroll page) */
+.parallax-1
 {
 	display: flex;
-	justify-content: space-between;
+	flex-direction: column;
+	justify-content: center;
+
+	height: 100%;
+	padding: 1% 3%;
+
+	background-image: url("../resources/stars.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+/* Styling Second, Third, Fourth and fifth Main Content (second main content) */
+.parallax-2, .parallax-3, .parallax-4, .parallax-5
+{	
+	display: flex;
+	justify-content: center;
 	align-items: center;
-	padding: 0.7% 1.4%;
+
+	background-image: url("../resources/stars.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	height: 100%;
+	padding: 1% 5%;
+	gap: 5%;
+}
+
+.upper-container-landing
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 5vh;
+
+	padding: 0% 15%;
+}
+
+.lower-container-landing
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Changing the size of image in main content area */
+.main_img
+{
+	outline: 5px solid white;
+	width: 45vw;
+	height: 60vh;
 }
 
 /* Applying flex property to navigation menu items*/
 .flex-navmenu
 {
 	display: flex;
-	gap: 60px ;
+	gap: 9vh;
 }
 
+/* Styling nagivation bar logo (text)*/
+.navbar-logo-text
+{
+	font-family: 'Monoton', cursive;
+	font-size: 1.2vw;
+}
+
+/* Applying style to main title text ("CLOVER") */
 .title-heading
 {
-	font-family: 'Sigmar One', cursive;
-	font-size: 6.5vw;
+	font-family: 'Monoton', cursive;
+	font-size: 7vw;
 }
 
-.column-left, .column-right
+/* Hmm */
+.title-sub-heading
 {
-	/*outline: 3px solid green;*/
+	margin: -6vh 0 0 25vw;
+	letter-spacing: 0.2vw;
+	font-family: 'Monoton', cursive;
+	font-size: 2vw;
+	text-decoration: overline;
+	text-decoration-color: white;
+	text-decoration-style: double;
 }
 
-.column-left
+/* Applying style to Sub headings */
+.sub-heading
 {
-	display: flex;
-	flex-direction: column;
-	gap:20px;
+	font-family: 'Bebas Neue', cursive;
+	letter-spacing: 4px;
+	font-size: 4vw;
 }
 
+/* Hmm */
 .title-description
 {
 	font-family: 'Prompt', sans-serif;
-	font-size: 1.3vw;
+	font-size: 1.4vw;
+	line-height: 5vh;
 	text-align: justify;
 	text-justify: inter-word;
+	color: white;
 }
 
+/* First half of title text "CLO" */
+.heading-color
+{
+	color: #0FFF95;
+}
+
+/* Second half of title text "VER" */
+.heading-no-color
+{
+	color: white;
+}
+
+/* Hmm */
+.text-strike
+{
+	text-decoration: line-through;
+	text-decoration-color: red;
+	text-decoration-style: solid;
+	text-decoration-thickness: 0.3vw;
+}
+
+/* Hmm */
 .footer-text
 {
 	font-family: 'Prompt', sans-serif;
 	font-size: 1.1vw;
-	text-align: center;
-}
-
-main img
-{
-	width: 50.3vw;
-	height: 60.3vh;
-}
-
-h1,p
-{
-	margin: 0px;
-	padding: 0px;
 }
 
