@@ -5,25 +5,37 @@
 	<title>Dr. Senior Page</title>
 	<link rel="stylesheet" type="text/css" href="../CSS/Avash_CSS.css">
 
-	<!-- Importing fonts from google fonts for heading-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+	<!-- Importing fonts from google fonts for Title text-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <!-- Importing fonts for description text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
 
 	<!-- Importing fonts from google fonts for navbar-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200;300&display=swap" rel="stylesheet">
+
+	<!-- Importing fonts from google fonts for Title text-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div class="flex-container">
 		
 		<!-- Navigation Bar -->
 		<nav class="flex-navbar">
-
 			<!-- NavBar Logo -->
 			<div class="image-navbar">
-				<img src="../resources/logo2.png">
+				<!-- <img src="../resources/logo1.png"> -->
+				<div class="navbar-logo-text">
+					<span class="heading-color">CLO</span><span class="heading-no-color">VER</span>    
+				</div>      
 			</div>
 
 			<!-- NavBar Menu Items -->
@@ -59,7 +71,7 @@
 		<main>
 			<div class="flex-item-left">
 				<h1 class="title-heading">
-					Word and Letter Counter
+					Word <span class="heading-color">AND</span> Letter Counter
 				</h1>
 				<p class="title-heading-description">
 					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
@@ -79,34 +91,22 @@
 				<div class="buttondiv">	
 					<button onclick="counting()">Count</button>
 				</div>
-
 			</div >
 		</main>
-
-		<!-- Footer -->
-		<footer>
-			<div class="image-footer">
-				<img src="../resources/logo2.png">
-			</div>
-
-			<div class="footer-text">
-			 	&copy2021 Clover. All rights reserved 
-			</div> 
-		</footer>
 	</div>
 
-<script>
-	function counting() {
-		var totaletters = document.getElementById("mytextarea").value.length;
-		var totalwords = document.getElementById("mytextarea").value;
+	<script>
+		function counting() {
+			var totaletters = document.getElementById("mytextarea").value.length;
+			var totalwords = document.getElementById("mytextarea").value;
 
-		totalwords = totalwords.match( /\w+/g );
-		totalwords = totalwords.length;
+			totalwords = totalwords.match( /\w+/g );
+			totalwords = totalwords.length;
 
-		document.getElementById("displaylettersresult").innerHTML = "Total Letters = " + totaletters;
-		document.getElementById("displaywordsresult").innerHTML = "Total Words = " + totalwords;
-	}
-</script>
+			document.getElementById("displaylettersresult").innerHTML = "Total Letters = " + totaletters;
+			document.getElementById("displaywordsresult").innerHTML = "Total Words = " + totalwords;
+		}
+	</script>
 
 </body>
 </html>

@@ -1,30 +1,37 @@
 .flex-container{
-	outline: 0px solid grey;
+	/*outline: 2px solid red;*/
 	display: flex;
-	flex-direction: column;
+	/*flex-direction: column;*/
 	padding: 1.5%;
 	gap: 20px;
-
+	height: 93.9%;
+	background-image: url("../resources/stars.jpg");
+	align-items: center;
 }
 
-body{
-	background-color: #FFA37B;
+body,html{
+	/*background-color: #FFA37B;*/
+	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 div{
-	/*outline: 2px solid red;*/
+	/*outline: 2px solid green;*/
 	/*padding:20px;*/
-
-
 }
 
 main{
-	/*outline: 2px solid black;*/
-	padding:20px;
+	/*outline: 2px solid white;*/
+	padding:2% 3%;
 	display: flex;
 	justify-content: space-between;
 	gap: 30px;
+}
 
+.resultletters,.resultwords{
+	font-family: 'Prompt', sans-serif;
+	color: white;
 
 }
 
@@ -62,14 +69,16 @@ button{
 }
 
 .title-heading{
-	font-family: 'Kaushan Script', cursive;
+	font-family: 'Bebas Neue', cursive;
 	outline: 0px;
 	font-size: 40px;
+	color: white;
 }
 
 .title-heading-description{
 	font-family: 'Prompt', sans-serif;
 	font-size: 1.3vw;
+	color: white;
 
 }
 
@@ -80,7 +89,10 @@ textarea{
 	font-size: 1.3vw;
 	font-family: 'Prompt', sans-serif;
 	border-radius: 10px;
+	opacity: 0.9;
 }
+
+
 
 /*
 -----------------
@@ -89,64 +101,58 @@ Navbar and Footer
 */
 
 /* Adjusting logo (navbar) dimension */
-nav img
-{
-	width: 3vw;
-	height: 5vh;
-}
-
-nav a
-{
-	font-family: 'Prompt', sans-serif;
-	/*font-size: 113%;*/
-	font-size: 1.2vw;
-	color: white;
-	text-decoration: none;
-}
-
-nav{
-	/*background-color: green;*/
-}
-
-footer
-{
-	position: fixed;
-	bottom: 1.5vh;
-	left: 40vw;
-	display: flex;
-	gap: 20px;
-	justify-content: center;
-	align-items: center;
-}
-
-/* Adjusting logo (footer) dimension */
-footer img
-{
-	width: 2vw;
-	height: 4vh;
-}
 
 /* Applying style to entire navigation bar*/
-.flex-navbar
+nav
 {
+	top: 1%;
+	left: 3%;
+	width: 91.7%;
+	position: fixed;
+	background-color: rgb(0,0,0,0.7);
+	border: 0px solid white;
+	border-radius: 20px;
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0.7% 1.4%;
+	padding: 0.2% 1% 0;
+}
+
+/* Applying style to nagivation bar menu items */
+nav a
+{
+	font-family: 'Prompt', sans-serif;
+	/*font-family: 'Megrim', cursive;*/
+	font-size: 1.2vw;
+	color: white;
+	text-decoration: none;
 }
 
 /* Applying flex property to navigation menu items*/
 .flex-navmenu
 {
 	display: flex;
-	gap: 60px ;
+	gap: 9vh;
 }
 
-.footer-text
+/* Styling nagivation bar logo (text)*/
+.navbar-logo-text
 {
-	font-family: 'Prompt', sans-serif;
-	font-size: 1.1vw;
-	text-align: center;
+	font-family: 'Monoton', cursive;
+	font-size: 1.2vw;
+}
+
+/* First half of title text "CLO" */
+.heading-color
+{
+	color: #0FFF95;
+}
+
+/* Second half of title text "VER" */
+.heading-no-color
+{
+	color: white;
 }
 
 
