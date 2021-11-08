@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>This is a title.</title>
+	<title>Dr. Senior Page</title>
 	<link rel="stylesheet" type="text/css" href="../CSS/Avash_CSS.css">
 
 	<!-- Importing fonts from google fonts for heading-->
@@ -61,15 +61,24 @@
 				<h1 class="title-heading">
 					Word and Letter Counter
 				</h1>
-					<br><br>
 				<p class="title-heading-description">
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
 				</p>
 			</div>
 			<div class="flex-item-right">
-				Right Box
-				<br><br>
-				<textarea placeholder="Enter a text..."></textarea>
+				<textarea id="mytextarea" placeholder="Enter a text..."></textarea>
+				
+				<div class="resultletters">
+					<p id="displaylettersresult"></p>
+				</div>
+
+				<div class="resultwords">
+					<p id="displaywordsresult"></p>
+				</div>
+
+				<div class="buttondiv">	
+					<button onclick="counting()">Count</button>
+				</div>
 
 			</div >
 		</main>
@@ -85,5 +94,19 @@
 			</div> 
 		</footer>
 	</div>
+
+<script>
+	function counting() {
+		var totaletters = document.getElementById("mytextarea").value.length;
+		var totalwords = document.getElementById("mytextarea").value;
+
+		totalwords = totalwords.match( /\w+/g );
+		totalwords = totalwords.length;
+
+		document.getElementById("displaylettersresult").innerHTML = "Total Letters = " + totaletters;
+		document.getElementById("displaywordsresult").innerHTML = "Total Words = " + totalwords;
+	}
+</script>
+
 </body>
 </html>
