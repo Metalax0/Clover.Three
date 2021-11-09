@@ -36,10 +36,16 @@ main{
 }
 
 button{
-	padding: 12px 24px;
-	background-color: #FFA37B;
-	color: white;
+	background-color: #0FFF95;
 	border-radius: 10px;
+	font-family: 'Prompt', sans-serif;
+	font-size: 1.5vw;
+	font-weight: bold;
+	color: white;
+	padding: 0.5% 5%;
+	/*outline: 2px solid white;*/
+	opacity: 0.9;
+	
 }
 
 .buttondiv{
@@ -48,16 +54,11 @@ button{
 	justify-content: center;
 	}
 
-.resultletters{
+.result{
 	display: flex;
 	justify-content: center;
+	color: white;
 }
-
-.resultwords{
-	display: flex;
-	justify-content: center;
-}
-
 
 .flex-item-left{
 	
@@ -71,20 +72,24 @@ button{
 .title-heading{
 	font-family: 'Bebas Neue', cursive;
 	outline: 0px;
-	font-size: 40px;
+	letter-spacing: 4px;
+	font-size: 4vw;
 	color: white;
+	margin: 0;
+	padding: 0;
 }
 
 .title-heading-description{
 	font-family: 'Prompt', sans-serif;
-	font-size: 1.3vw;
+	font-size: 1.4vw;
+	line-height: 5vh;
 	color: white;
 
 }
 
 textarea{
 	width: 50vw;
-	height: 50vh;
+	height: 64vh;
 	resize: none;
 	font-size: 1.3vw;
 	font-family: 'Prompt', sans-serif;
@@ -129,6 +134,13 @@ nav a
 	text-decoration: none;
 }
 
+/* Hover effect on navbar items */
+a:hover
+{
+	color: #0FFF95;
+	font-weight: bold;
+}
+
 /* Applying flex property to navigation menu items*/
 .flex-navmenu
 {
@@ -154,6 +166,14 @@ nav a
 {
 	color: white;
 }
+
+.active_menu
+{
+	color: #0FFF95;
+	border-bottom: 2px solid;
+}
+
+
 
 
 
