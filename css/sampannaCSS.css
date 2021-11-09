@@ -1,0 +1,152 @@
+/*
+-------
+TESTING
+-------
+*/
+
+div,section
+{
+	/*outline: 2px solid white;*/
+}
+
+/*
+----------
+ACTUAL CSS
+----------
+*/
+
+/* Applying css to body and entire html*/
+body,html
+{
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+/* Applying style to entire navigation bar*/
+nav
+{
+	top: 1%;
+	left: 3%;
+	width: 91.7%;
+	position: fixed;
+	background-color: rgb(0,0,0,0.7);
+	border: 0px solid white;
+	border-radius: 20px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.2% 1% 0;
+}
+
+/* Applying style to nagivation bar menu items */
+nav a
+{
+	font-family: 'Prompt', sans-serif;
+	font-size: 1.2vw;
+	color: white;
+	text-decoration: none;
+}
+
+/* Hover effect on navbar items */
+a:hover
+{
+	color: #0FFF95;
+	font-weight: bold;
+}
+
+section
+{
+	display: flex;
+	gap: 5%;
+}
+
+/* Reseting margin and padding property of h1 and p to 0 */
+h1,h2,p
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+p b{
+	color: #0FFF95 ;
+}
+
+/* Styling Second, Third, Fourth and fifth Main Content (second main content) */
+.parallax-1, .parallax-2
+{	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-image: url("../resources/stars.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: center;
+
+	height: 100%;
+	padding: 1% 5%;
+	gap: 5%;
+}
+
+/* Applying flex property to navigation menu items*/
+.flex-navmenu
+{
+	display: flex;
+	gap: 9vh;
+}
+
+/* Styling nagivation bar logo (text)*/
+.navbar-logo-text
+{
+	font-family: 'Monoton', cursive;
+	font-size: 1.2vw;
+}
+
+/* First half of title text "CLO" */
+.heading-color
+{
+	color: #0FFF95;
+}
+
+/* Second half of title text "VER" */
+.heading-no-color
+{
+	color: white;
+}
+
+/* hmm */
+.active_menu
+{
+	color: #0FFF95;
+	border-bottom: 2px solid;
+}
+
+/* Changing the size of image in main content area */
+.main_img
+{
+	outline: 5px solid white;
+	width: 45vw;
+	height: 60vh;
+}
+
+/* Applying style to Sub headings */
+.title-heading
+{
+	font-family: 'Bebas Neue', cursive;
+	letter-spacing: 4px;
+	font-size: 4vw;
+}
+
+/* Hmm */
+.title-description
+{
+	font-family: 'Prompt', sans-serif;
+	font-size: 1.4vw;
+	line-height: 5vh;
+	text-align: justify;
+	text-justify: inter-word;
+	color: white;
+}
