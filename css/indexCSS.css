@@ -58,21 +58,20 @@ nav
 	padding: 0.2% 1% 0;
 }
 
-/* Adjusting logo (navbar) dimension */
-nav img
-{
-	width: 3vw;
-	height: 5vh;
-}
-
 /* Applying style to nagivation bar menu items */
 nav a
 {
 	font-family: 'Prompt', sans-serif;
-	/*font-family: 'Megrim', cursive;*/
 	font-size: 1.2vw;
 	color: white;
 	text-decoration: none;
+}
+
+/* Hover effect on navbar items */
+a:hover
+{
+	color: #0FFF95;
+	font-weight: bold;
 }
 
 /* Applying style to main content (nav-main content-footer) */
@@ -106,7 +105,7 @@ label
 }
 
 /* Styling footer */
-footer
+/*footer
 {
 	position: fixed;
 	bottom: 1.5vw;
@@ -115,14 +114,14 @@ footer
 	gap: 2vh;
 	justify-content: center;
 	align-items: center;
-}
+}*/
 
 /* Adjusting logo (footer) dimension */
-footer img
+/*footer img
 {
 	width: 3vw;
 	height: 4vh;
-}
+}*/
 
 /* Styling First Main Content (pre scroll page) */
 .parallax-1
@@ -266,3 +265,8 @@ footer img
 	font-size: 1.1vw;
 }
 
+.active_menu
+{
+	color: #0FFF95;
+	border-bottom: 2px solid;
+}
