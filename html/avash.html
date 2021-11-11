@@ -88,6 +88,7 @@
 				<div class="result">
 					<p id="displaylettersresult"></p>
 					<p id="displaywordsresult"></p>
+					<p id="displaysentenceresult"></p>
 				</div>
 
 				<div class="buttondiv">	
@@ -99,14 +100,18 @@
 
 	<script>
 		function counting() {
-			var totaletters = document.getElementById("mytextarea").value.length;
-			var totalwords = document.getElementById("mytextarea").value;
+			let totaletters = document.getElementById("mytextarea").value.length;
+			let totalwords = document.getElementById("mytextarea").value;
+			let text = document.getElementById("mytextarea").value;
 
 			totalwords = totalwords.match( /\w+/g );
 			totalwords = totalwords.length;
+			count = text.split(". ").length;
 
-			document.getElementById("displaylettersresult").innerHTML = "Total Letters = " + totaletters + "&nbsp" + "and" + "&nbsp";
-			document.getElementById("displaywordsresult").innerHTML = "Total Words = " + totalwords;
+			document.getElementById("displaylettersresult").innerHTML = "Total Letters = " + totaletters + "&nbsp" + "," + "&nbsp";
+			document.getElementById("displaywordsresult").innerHTML = "Total Words = " + totalwords + "&nbsp" + "and" + "&nbsp";
+			document.getElementById("displaysentenceresult").innerHTML = "Total Sentences = " + count;
+			
 		}
 	</script>
 
