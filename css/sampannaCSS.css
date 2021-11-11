@@ -4,9 +4,9 @@ TESTING
 -------
 */
 
-div,section
+div, a, input
 {
-	/*outline: 2px solid white;*/
+	/*outline: 3px solid red;*/
 }
 
 /*
@@ -56,10 +56,18 @@ a:hover
 	font-weight: bold;
 }
 
-section
+a img
 {
-	display: flex;
-	gap: 5%;
+	width: 2vw;
+	height: 3vh;
+	outline: 2px solid red;
+}
+
+.todo-button-container img
+{
+	width: 2.5vw;
+	height: 2.5vw;
+	/*outline: 2px solid red;*/
 }
 
 /* Reseting margin and padding property of h1 and p to 0 */
@@ -73,11 +81,40 @@ p b{
 	color: #0FFF95 ;
 }
 
+input[type=checkbox]
+{
+	width: 2vw;
+	height: 2vw;
+}
+
+button
+{
+	width: 12vw;
+	height: 6vh;
+	background-color: #0FFF95;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1vw;
+
+	font-family: 'Prompt', sans-serif;
+	font-size: 1.3vw;
+	font-weight: bold;
+
+	border: 4px solid white;
+	border-radius: 0.8vw;
+}
+
+button:hover
+{
+	background-color: white;
+}
+
 /* Styling Second, Third, Fourth and fifth Main Content (second main content) */
 .parallax-1, .parallax-2
 {	
 	display: flex;
-	justify-content: center;
 	align-items: center;
 
 	background-image: url("../resources/stars.jpg");
@@ -87,9 +124,92 @@ p b{
 	background-position: center;
 
 	height: 100%;
-	padding: 1% 5%;
+	padding: 0 5%;
 	gap: 5%;
 }
+
+.parallax-1 .column-right, .parallax-2 .column-left
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: none;
+
+	background-color: #00ff99;
+	/*background-color: #9BD1FA;*/
+	/*background-color: #FFEC94;*/
+	/*background-color: #FFF5EE;*/
+	/*background-color: #0FFF95;*/
+	outline: 5px solid white;
+
+	width: 275vw;
+	height: 30vw;
+	gap: 2vw;
+	padding: 2vw 0;
+}
+
+/* Title of components (to do and puzzle) */
+.todo-heading
+{
+	border: none;
+	/*background-color: #9BD1FA;*/
+	background-color: transparent;
+
+	font-family: 'Bebas Neue', cursive;
+	font-size: 2vw;
+	text-align: center;	
+	width: 25vw;
+}
+
+/* Hmm */
+.todo-checkbox-container
+{
+	display: flex;
+	flex-direction: column;
+	overflow: none;
+	/*background-color: #9BD1FA;*/
+
+	width: 35vw;
+	height: 40vh;
+	gap: 2vw;
+}
+
+.todo-button-container
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1vw;
+}
+
+/* Hmm */
+.todo-option
+{
+	border: none;
+	background: transparent;
+	/*background-color: #9BD1FA;*/
+
+	font-family: 'Prompt', sans-serif;
+	font-size: 1.3vw;
+	font-weight: bold;
+	width: 25vw;
+}
+
+.options
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 2vw;
+}
+
+/* Styling placehodler of all input fields */
+::placeholder
+{
+	color: black;
+}
+
 
 /* Applying flex property to navigation menu items*/
 .flex-navmenu
@@ -122,14 +242,6 @@ p b{
 {
 	color: #0FFF95;
 	border-bottom: 2px solid;
-}
-
-/* Changing the size of image in main content area */
-.main_img
-{
-	outline: 5px solid white;
-	width: 45vw;
-	height: 60vh;
 }
 
 /* Applying style to Sub headings */
