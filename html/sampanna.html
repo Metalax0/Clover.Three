@@ -30,95 +30,144 @@
 	<link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
 </head>
 <body>
-	<!-----------------
-    First Parallax Div 
+
+    <!-- Navigation Bar -->
+    <nav class="flex-navbar">
+        <!-- NavBar Logo -->
+        <div class="image-navbar">
+            <!-- <img src="../resources/logo1.png"> -->
+            <div class="navbar-logo-text">
+                <span class="heading-color">CLO</span><span class="heading-no-color">VER</span>    
+            </div>      
+        </div>
+
+        <!-- NavBar Menu Items -->
+        <div class="flex-navmenu">
+            <!-- Navigation Bar Menu Item 1 -->
+            <div>
+                <a href="index.html"> Home </a>
+            </div>
+
+            <!-- Navigation Bar Menu Item 2 -->
+            <div>
+                <a href="avash.html"> Dr Senior </a>
+            </div>
+
+            <!-- Navigation Bar Menu Item 3 -->
+            <div>
+                <a class = "active_menu" href="sampanna.html"> Metalax </a>
+            </div>
+
+            <!-- Navigation Bar Menu Item 4 -->
+            <div>
+                <a href="sandesh.html"> Wildfire </a>
+            </div>
+
+            <!-- Navigation Bar Menu Item 5 -->
+            <div>
+                <a href="umesh.html"> XerXes </a>
+            </div>
+        </div>
+    </nav>
+
+	<!----------------
+    First Parallax Body
     ------------------->
-    <div class="parallax-1">
-    	<!-- Navigation Bar -->
-    	<nav class="flex-navbar">
-    		<!-- NavBar Logo -->
-    		<div class="image-navbar">
-    			<!-- <img src="../resources/logo1.png"> -->
-    			<div class="navbar-logo-text">
-    				<span class="heading-color">CLO</span><span class="heading-no-color">VER</span>    
-    			</div>      
-    		</div>
+    <section class="parallax-1">
+        <!-- Left Column Container -->
+        <div class="column-left">
+            <h1 class="title-heading">
+                <span class="heading-no-color">TO</span> 
+                <span class="heading-color">DO</span>
+                <span class="heading-no-color">LIST</span>          
+            </h1>
 
-    		<!-- NavBar Menu Items -->
-    		<div class="flex-navmenu">
-    			<!-- Navigation Bar Menu Item 1 -->
-    			<div>
-    				<a href="index.html"> Home </a>
-    			</div>
+            <p class="title-description">
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse <b>cillum</b> dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in Ut enim ad.
+            </p>
+        </div>
 
-    			<!-- Navigation Bar Menu Item 2 -->
-    			<div>
-    				<a href="avash.html"> Dr Senior </a>
-    			</div>
+        <!-- Right Column Container -->
+        <div class="column-right">
 
-    			<!-- Navigation Bar Menu Item 3 -->
-    			<div>
-    				<a class = "active_menu" href="sampanna.html"> Metalax </a>
-    			</div>
+            <input class="todo-heading" type="text" placeholder="Write List Name Here">
 
-    			<!-- Navigation Bar Menu Item 4 -->
-    			<div>
-    				<a href="sandesh.html"> Wildfire </a>
-    			</div>
+            <div class="todo-checkbox-container">
+                <div class="options">
+                    <input type="checkbox">
+                    <input class="todo-option" type="text" placeholder="Write Task Name Here">
+                    <a href="">
+                        <img src="../resources/icon_delete.png">
+                    </a>
+                </div>
 
-    			<!-- Navigation Bar Menu Item 5 -->
-    			<div>
-    				<a href="umesh.html"> XerXes </a>
-    			</div>
-    		</div>
-    	</nav>
+                <div class="options">
+                    <input type="checkbox">
+                    <input class="todo-option" type="text" placeholder="Write Task Name Here">
+                    <a href="">
+                        <img src="../resources/icon_delete.png">
+                    </a>
+                </div>
 
-    	<section>
-    		<!-- Left Column Container -->
-    		<div class="column-left">
-    			<h1 class="title-heading">
-    				<span class="heading-no-color">TO</span> 
-    				<span class="heading-color">DO</span>
-    				<span class="heading-no-color">LIST</span>          
-    			</h1>
+                <div class="options">
+                    <input type="checkbox">
+                    <input class="todo-option" type="text" placeholder="Write Task Name Here">
+                    <a href="">
+                        <img src="../resources/icon_delete.png">
+                    </a>
+                </div>
 
-    			<p class="title-description">
-    				<br>
-    				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse <b>cillum</b> dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in Ut enim ad.
-    			</p>
-    		</div>
+                <div class="options">
+                    <input type="checkbox">
+                    <input class="todo-option" type="text" placeholder="Write Task Name Here">
+                    <a href="">
+                        <img src="../resources/icon_delete.png">
+                    </a>
+                </div>
 
-    		<!-- Right Column Container -->
-    		<div class="column-right">
-    			<!-- Main content Image -->
-    			<div class="image-container">
-    				<img class="main_img" src="../resources/14.jpg">
-    			</div>
-    		</div>
-    	</section>
-    </div>
+                <div class="options">
+                    <input type="checkbox">
+                    <input class="todo-option" type="text" placeholder="Write List Name Here">
+                    <a href="">
+                        <img src="../resources/icon_delete.png">
+                    </a>
+                </div>
+            </div>
 
-    <div class="parallax-2">
-    	<!-- Right Column Container -->
-    	<div class="column-right">
-    		<!-- Main content Image -->
-    		<div class="image-container">
-    			<img class="main_img" src="../resources/14.jpg">
-    		</div>
-    	</div>
+            <div class="todo-button-container">
+                <button>
+                    <img src="../resources/icon_add.png">
+                    New Task
+                </button>
+            </div>
+        </div>
+    </section>
 
-    	<!-- Left Column Container -->
-    	<div class="column-left">
-    		<h1 class="title-heading">
-    			<span class="heading-no-color">CRYP</span><span class="heading-color">TIC</span>
-    			<span class="heading-no-color">PUZZLE</span>          
-    		</h1>
+    <!----------------
+    Second Parallax Body
+    ------------------->
+    <section class="parallax-2">
+        <!-- Left Column Container -->
+        <div class="column-left">
+            <div>
 
-    		<p class="title-description">
-    			<br>
-    			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <b>Duis</b> aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in Ut enim ad.
-    		</p>
-    	</div>
-    </div>
+            </div>
+        </div>
+
+        <!-- Right Column Container -->
+        <div class="column-right">
+            <h1 class="title-heading">
+                <span class="heading-no-color">CRYP</span><span class="heading-color">TIC</span>
+                <span class="heading-no-color">PUZZLE</span>          
+            </h1>
+
+            <p class="title-description">
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <b>Duis</b> aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in Ut enim ad.
+            </p>
+        </div>
+    </section>
+
 </body>
 </html>
