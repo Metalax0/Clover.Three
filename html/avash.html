@@ -83,17 +83,23 @@
 			</div>
 			<!-- Right Container -->
 			<div class="flex-item-right">
-				<textarea id="mytextarea" placeholder="Enter a text..."></textarea>
+				<textarea id="mytextarea" onkeyup="counting()" placeholder="Enter a text..."></textarea>
+
+				<div class="displayresult">
+					<p>Letters</p>
+					<p>Words</p>
+					<p>Sentences</p>
+				</div>
 				
 				<div class="result">
-					<p id="displaylettersresult"></p>
-					<p id="displaywordsresult"></p>
-					<p id="displaysentenceresult"></p>
+					<p id="displaylettersresult">0</p>
+					<p id="displaywordsresult">0</p>
+					<p id="displaysentenceresult">0</p>
 				</div>
 
-				<div class="buttondiv">	
+				<!-- <div class="buttondiv">	
 					<button onclick="counting()">Count</button>
-				</div>
+				</div> -->
 			</div >
 		</main>
 	</div>
@@ -108,9 +114,9 @@
 			totalwords = totalwords.length;
 			count = text.split(". ").length;
 
-			document.getElementById("displaylettersresult").innerHTML = "Total Letters = " + totaletters + "&nbsp" + "," + "&nbsp";
-			document.getElementById("displaywordsresult").innerHTML = "Total Words = " + totalwords + "&nbsp" + "and" + "&nbsp";
-			document.getElementById("displaysentenceresult").innerHTML = "Total Sentences = " + count;
+			document.getElementById("displaylettersresult").innerHTML = totaletters + "&nbsp" + "&nbsp";
+			document.getElementById("displaywordsresult").innerHTML = totalwords + "&nbsp" + "&nbsp";
+			document.getElementById("displaysentenceresult").innerHTML = count;
 			
 		}
 	</script>
