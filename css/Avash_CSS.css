@@ -16,8 +16,8 @@ body,html{
 	padding: 0;
 }
 
-div{
-	/*outline: 2px solid green;*/
+div,p{
+	/*outline: 3px solid darkred;*/
 	/*padding:20px;*/
 }
 
@@ -26,7 +26,7 @@ main{
 	padding:2% 3%;
 	display: flex;
 	justify-content: space-between;
-	gap: 30px;
+	gap: 5%;
 }
 
 .resultletters,.resultwords{
@@ -56,16 +56,35 @@ button{
 
 .result{
 	display: flex;
+	/*justify-content: space-evenly;*/
 	justify-content: center;
+	gap: 7.5vw;
 	color: white;
+	font-size: 1.2vw;
+}
+
+.displayresult{
+	display: flex;
+	color: white;
+	/*justify-content: space-evenly;*/
+	justify-content: center;
+	gap: 4vw;
+	font-size: 1.4vw;
 }
 
 .flex-item-left{
-	
-	
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 1vw;
+	height: 30vw;	
 }
 
 .flex-item-right{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
 
 }
 
@@ -84,12 +103,14 @@ button{
 	font-size: 1.4vw;
 	line-height: 5vh;
 	color: white;
+	margin: 0;
+	padding: 0;
 
 }
 
 textarea{
-	width: 50vw;
-	height: 67vh;
+	width: 44vw;
+	height: 58vh;
 	resize: none;
 	font-size: 1.3vw;
 	font-family: 'Prompt', sans-serif;
