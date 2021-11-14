@@ -4,9 +4,9 @@ TESTING
 -------
 */
 
-div, a, input
+div, input
 {
-	/*outline: 3px solid red;*/
+	/*outline: 2px solid red;*/
 }
 
 /*
@@ -56,18 +56,16 @@ a:hover
 	font-weight: bold;
 }
 
-a img
+img
 {
-	width: 2vw;
-	height: 3vh;
-	outline: 2px solid red;
+	width: 1.8vw;
+	height: 1.8vw;
 }
 
 .todo-button-container img
 {
 	width: 2.5vw;
 	height: 2.5vw;
-	/*outline: 2px solid red;*/
 }
 
 /* Reseting margin and padding property of h1 and p to 0 */
@@ -85,30 +83,6 @@ input[type=checkbox]
 {
 	width: 2vw;
 	height: 2vw;
-}
-
-button
-{
-	width: 12vw;
-	height: 6vh;
-	background-color: #0FFF95;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 1vw;
-
-	font-family: 'Prompt', sans-serif;
-	font-size: 1.3vw;
-	font-weight: bold;
-
-	border: 4px solid white;
-	border-radius: 0.8vw;
-}
-
-button:hover
-{
-	background-color: white;
 }
 
 /* Styling Second, Third, Fourth and fifth Main Content (second main content) */
@@ -133,14 +107,12 @@ button:hover
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
 	overflow: none;
 
-	background-color: #00ff99;
+	background-color: #00E099;
 	/*background-color: #9BD1FA;*/
 	/*background-color: #FFEC94;*/
 	/*background-color: #FFF5EE;*/
-	/*background-color: #0FFF95;*/
 	outline: 5px solid white;
 
 	width: 275vw;
@@ -149,11 +121,45 @@ button:hover
 	padding: 2vw 0;
 }
 
+.newTask
+{
+	width: 12vw;
+	height: 6vh;
+	background-color: white;
+
+	font-family: 'Prompt', sans-serif;
+	font-size: 1.3vw;
+	font-weight: bold;
+	color: black;
+
+	border: 3px solid black;
+	border-radius: 0.5vw;
+}
+
+.newTask:hover
+{
+	color: white;
+	background-color: black;
+	border: 3px solid white;
+}
+
+.deleteButton
+{
+	padding: 0px;
+	margin: 0px;
+	height: 2vw;
+	width: 2vw;
+}
+
+.deleteButton:hover
+{
+	background-color: black;
+}
+
 /* Title of components (to do and puzzle) */
 .todo-heading
 {
 	border: none;
-	/*background-color: #9BD1FA;*/
 	background-color: transparent;
 
 	font-family: 'Bebas Neue', cursive;
@@ -163,16 +169,17 @@ button:hover
 }
 
 /* Hmm */
-.todo-checkbox-container
+#todo-checkbox-container
 {
 	display: flex;
 	flex-direction: column;
-	overflow: none;
-	/*background-color: #9BD1FA;*/
+	overflow-y: auto;
+	/*outline: 2px solid red;*/
 
 	width: 35vw;
-	height: 40vh;
-	gap: 2vw;
+	height: 40vw;
+	gap: 1.8vw;
+	padding-right: 1vw;
 }
 
 .todo-button-container
@@ -196,7 +203,7 @@ button:hover
 	width: 25vw;
 }
 
-.options
+.task
 {
 	display: flex;
 	align-items: center;
@@ -209,7 +216,6 @@ button:hover
 {
 	color: black;
 }
-
 
 /* Applying flex property to navigation menu items*/
 .flex-navmenu
@@ -261,4 +267,10 @@ button:hover
 	text-align: justify;
 	text-justify: inter-word;
 	color: white;
+}
+
+.strike
+{
+	text-decoration: line-through;
+	opacity: 0.7
 }

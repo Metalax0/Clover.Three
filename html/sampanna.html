@@ -6,6 +6,9 @@
 	<!-- Linking css file -->
 	<link rel="stylesheet" href="../css/sampannaCSS.css">
 
+    <!-- Linking js file -->
+    <script src="../js/sampannaJS.js"></script>
+
 	<!-- Linking Logo in browser title tab -->
 	<link rel="icon" href="../resources/logo_c.png" type="image/icon type">
 
@@ -93,51 +96,50 @@
 
             <input class="todo-heading" type="text" placeholder="Write List Name Here">
 
-            <div class="todo-checkbox-container">
-                <div class="options">
-                    <input type="checkbox">
+            <div id="todo-checkbox-container">
+                <div class="task">
+                    <input type="checkbox" onclick = strikeTask(this)>
                     <input class="todo-option" type="text" placeholder="Write Task Name Here">
-                    <a href="">
+                    <button class="deleteButton" onclick="deleteTask(this)">
                         <img src="../resources/icon_delete.png">
-                    </a>
+                    </button>
                 </div>
 
-                <div class="options">
-                    <input type="checkbox">
+                <div class="task">
+                    <input type="checkbox" onclick = strikeTask(this)>
                     <input class="todo-option" type="text" placeholder="Write Task Name Here">
-                    <a href="">
+                    <button class="deleteButton" onclick="deleteTask(this)">
                         <img src="../resources/icon_delete.png">
-                    </a>
+                    </button>
                 </div>
 
-                <div class="options">
-                    <input type="checkbox">
+                <div class="task">
+                    <input type="checkbox" onclick = strikeTask(this)>
                     <input class="todo-option" type="text" placeholder="Write Task Name Here">
-                    <a href="">
+                    <button class="deleteButton" onclick="deleteTask(this)">
                         <img src="../resources/icon_delete.png">
-                    </a>
+                    </button>
                 </div>
 
-                <div class="options">
-                    <input type="checkbox">
+                <div class="task">
+                    <input type="checkbox" onclick = strikeTask(this)>
                     <input class="todo-option" type="text" placeholder="Write Task Name Here">
-                    <a href="">
+                    <button class="deleteButton" onclick="deleteTask(this)">
                         <img src="../resources/icon_delete.png">
-                    </a>
+                    </button>
                 </div>
 
-                <div class="options">
-                    <input type="checkbox">
-                    <input class="todo-option" type="text" placeholder="Write List Name Here">
-                    <a href="">
+                <div class="task">
+                    <input type="checkbox" onclick = strikeTask(this)>
+                    <input class="todo-option" type="text" placeholder="Write Task Name Here">
+                    <button class="deleteButton" onclick="deleteTask(this)">
                         <img src="../resources/icon_delete.png">
-                    </a>
+                    </button>
                 </div>
             </div>
 
             <div class="todo-button-container">
-                <button>
-                    <img src="../resources/icon_add.png">
+                <button class="newTask" onclick="addTask()">
                     New Task
                 </button>
             </div>
