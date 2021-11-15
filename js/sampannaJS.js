@@ -1,4 +1,10 @@
-// JS CODE for Sampanna.html
+/* 
+----------------------
+----------------------
+JS CODE FOR TO-DO-LIST
+----------------------
+----------------------
+*/
 
 // Method to strike a text (strike to do tasks)
 function strikeTask(currentCheckbox)
@@ -47,3 +53,45 @@ function addTask()
 		lastTask.insertAdjacentHTML("afterend", content);
 	}
 }
+
+/* 
+------------------------
+------------------------
+JS CODE FOR CRYPTIC QUIZ
+------------------------
+------------------------
+*/
+
+//  For the purpose of testing (only works in case of one question)
+function checkAnswer()
+{
+	var answerDOM = document.querySelector('#puzzle-container input[type="text"]');
+	var checkanswerDOM = document.getElementsByClassName("checkAnswer");
+	var correctAnswer = false;
+	console.log(checkanswerDOM[0]);
+
+	if (answerDOM.value.toUpperCase() == "ALAN TURING")
+	{
+		correctAnswer = true;
+	}
+
+	if (correctAnswer)
+	{
+		checkanswerDOM[0].style.background = "green";
+	}
+	else
+	{
+		checkanswerDOM[0].style.background = "red";
+	}
+}
+
+function nextPuzzle()
+{
+	//
+}
+
+function previousPuzzle()
+{
+	//
+}
+
