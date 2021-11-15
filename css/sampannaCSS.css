@@ -4,7 +4,7 @@ TESTING
 -------
 */
 
-div, input
+div, label
 {
 	/*outline: 2px solid red;*/
 }
@@ -83,9 +83,49 @@ input[type=checkbox]
 {
 	width: 2vw;
 	height: 2vw;
+	cursor: pointer;
 }
 
-/* Styling Second, Third, Fourth and fifth Main Content (second main content) */
+button
+{
+	cursor: pointer;
+}
+
+/* Applying flex property to navigation menu items*/
+.flex-navmenu
+{
+	display: flex;
+	gap: 9vh;
+}
+
+/* Styling nagivation bar logo (text)*/
+.navbar-logo-text
+{
+	font-family: 'Monoton', cursive;
+	font-size: 1.2vw;
+}
+
+/* First half of title text "CLO" */
+.heading-color
+{
+	color: #0FFF95;
+}
+
+/* Second half of title text "VER" */
+.heading-no-color
+{
+	color: white;
+}
+
+/* hmm */
+.active_menu
+{
+	color: #0FFF95;
+	border-bottom: 2px solid;
+}
+
+
+/* Styling First and Second Section */
 .parallax-1, .parallax-2
 {	
 	display: flex;
@@ -107,7 +147,6 @@ input[type=checkbox]
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	overflow: none;
 
 	background-color: #00E099;
 	/*background-color: #9BD1FA;*/
@@ -118,29 +157,7 @@ input[type=checkbox]
 	width: 275vw;
 	height: 30vw;
 	gap: 2vw;
-	padding: 2vw 0;
-}
-
-.newTask
-{
-	width: 12vw;
-	height: 6vh;
-	background-color: white;
-
-	font-family: 'Prompt', sans-serif;
-	font-size: 1.3vw;
-	font-weight: bold;
-	color: black;
-
-	border: 3px solid black;
-	border-radius: 0.5vw;
-}
-
-.newTask:hover
-{
-	color: white;
-	background-color: black;
-	border: 3px solid white;
+	padding: 1vw 0;
 }
 
 .deleteButton
@@ -182,14 +199,6 @@ input[type=checkbox]
 	padding-right: 1vw;
 }
 
-.todo-button-container
-{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	gap: 1vw;
-}
-
 /* Hmm */
 .todo-option
 {
@@ -217,39 +226,6 @@ input[type=checkbox]
 	color: black;
 }
 
-/* Applying flex property to navigation menu items*/
-.flex-navmenu
-{
-	display: flex;
-	gap: 9vh;
-}
-
-/* Styling nagivation bar logo (text)*/
-.navbar-logo-text
-{
-	font-family: 'Monoton', cursive;
-	font-size: 1.2vw;
-}
-
-/* First half of title text "CLO" */
-.heading-color
-{
-	color: #0FFF95;
-}
-
-/* Second half of title text "VER" */
-.heading-no-color
-{
-	color: white;
-}
-
-/* hmm */
-.active_menu
-{
-	color: #0FFF95;
-	border-bottom: 2px solid;
-}
-
 /* Applying style to Sub headings */
 .title-heading
 {
@@ -273,4 +249,140 @@ input[type=checkbox]
 {
 	text-decoration: line-through;
 	opacity: 0.7
+}
+
+.newTask
+{
+	width: 12vw;
+	height: 10vh;
+	background-color: white;
+
+	font-family: 'Prompt', sans-serif;
+	font-size: 1.3vw;
+	font-weight: bold;
+	color: black;
+
+	border: 3px solid black;
+	border-radius: 0.5vw;
+}
+
+.newTask:hover
+{
+	color: white;
+	background-color: black;
+	border: 3px solid white;
+}
+
+/*
+--------------
+--------------
+CSS FOR PUZZLE
+--------------
+--------------
+*/
+
+#puzzle-button-container
+{
+	display: flex;
+	justify-content: space-between;
+	width: 40vw;
+}
+
+.puzzle-heading
+{
+	font-family: 'Bebas Neue', cursive;
+	font-size: 2.5vw;
+	letter-spacing: 0.2vw;
+	text-align: center;
+}
+
+/* Hmm */
+#puzzle-container
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	width: 40vw;
+	height: 25vw;
+	gap: 1.8vw;
+}
+
+.checkAnswer
+{
+	width: 12vw;
+	height: 6vh;
+	background-color: white;
+
+	font-family: 'Prompt', sans-serif;
+	font-size: 1.3vw;
+	font-weight: bold;
+	color: black;
+
+	border: 3px solid black;
+	border-radius: 0.5vw;
+}
+
+.puzzleNext, .puzzlePrevious
+{
+	width: 5vw;
+	height: 6vh;
+	background-color: white;
+
+	font-family: 'Prompt', sans-serif;
+	font-size: 1.3vw;
+	font-weight: bold;
+	color: black;
+
+	border: 3px solid black;
+	border-radius: 0.5vw;
+}
+
+.checkAnswer:hover, .puzzleNext:hover, .puzzlePrevious:hover
+{
+	color: white;
+	background-color: black;
+	border: 3px solid white;
+}
+
+#puzzle1
+{
+	display: flex;
+	flex-direction: column;
+	/*justify-content: center;*/
+	align-items: center;
+	gap: 2vw;
+}
+
+/* Hmm */
+.puzzle-text
+{
+	font-family: 'Prompt', sans-serif;
+	font-size: 1.4vw;
+	line-height: 5vh;
+	text-align: justify;
+	text-justify: inter-word;
+	color: black;
+}
+
+/* Hmm */
+.puzzle-answer
+{
+	border: 3px solid black;
+	border-radius: 0.5vw;
+	text-align: center;	
+
+	font-family: 'Prompt', sans-serif;
+	font-size: 1.3vw;
+	font-weight: bold;
+	width: 25vw;
+	height: 3vw;
+}
+
+.puzzle-note
+{
+	font-family: 'Prompt', sans-serif;
+	font-size: 1.2vw;
+	letter-spacing: 0.2vw;
+	text-align: center;
 }

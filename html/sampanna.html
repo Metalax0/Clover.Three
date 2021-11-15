@@ -9,28 +9,28 @@
     <!-- Linking js file -->
     <script src="../js/sampannaJS.js"></script>
 
-	<!-- Linking Logo in browser title tab -->
-	<link rel="icon" href="../resources/logo_c.png" type="image/icon type">
+    <!-- Linking Logo in browser title tab -->
+    <link rel="icon" href="../resources/logo_c.png" type="image/icon type">
 
-	<!-- Importing fonts from google fonts for navbar-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200;300&display=swap" rel="stylesheet">
+    <!-- Importing fonts from google fonts for navbar-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@200;300&display=swap" rel="stylesheet">
 
-	<!-- Importing fonts from google fonts for navbar logo text-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <!-- Importing fonts from google fonts for navbar logo text-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
 
-	<!-- Importing fonts from google fonts for Title text-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- Importing fonts from google fonts for Title text-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
-	<!-- Importing fonts for Descriptions -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+    <!-- Importing fonts for Descriptions -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -137,12 +137,10 @@
                     </button>
                 </div>
             </div>
-
-            <div class="todo-button-container">
-                <button class="newTask" onclick="addTask()">
-                    New Task
-                </button>
-            </div>
+            
+            <button class="newTask" onclick="addTask()">
+                New Task
+            </button>
         </div>
     </section>
 
@@ -152,8 +150,42 @@
     <section class="parallax-2">
         <!-- Left Column Container -->
         <div class="column-left">
-            <div>
+            <div id="puzzle-container">
+                <div id="puzzle1">
+                    <label class = "puzzle-heading">1. Icosikaihexagon</label>
 
+                    <div class="puzzle-text">
+                        M &nbsp&nbsp @ &nbsp&nbsp # &nbsp&nbsp T &nbsp&nbsp 1 &nbsp&nbsp H &nbsp&nbsp ) &nbsp&nbsp > &nbsp&nbsp / &nbsp&nbsp J
+                        &nbsp&nbsp K &nbsp&nbsp & &nbsp&nbsp V
+                        <br>
+                        < &nbsp&nbsp B &nbsp&nbsp $ &nbsp&nbsp _ &nbsp&nbsp Y &nbsp&nbsp * &nbsp&nbsp U &nbsp&nbsp E &nbsp&nbsp ? &nbsp&nbsp C &nbsp&nbsp + &nbsp&nbsp G &nbsp&nbsp =
+                    </div>
+
+                    <div class="puzzle-text">
+                        <b>Question :</b>  HMU>1Y BH #BV$EU1Y *#/1&lt#1
+                    </div>
+
+                    <input class="puzzle-answer" type="text" placeholder="Write Your Answer Here"> 
+                    <label class="puzzle-note"> <b>NOTE : </b> Decypher the question and answer it.</label>
+                </div>
+
+                <!-- <div id="puzzle2">
+                    <label class = "puzzle-heading">2. Hmm</label>
+                </div> -->
+            </div>
+
+            <div id="puzzle-button-container">
+                <button class="puzzlePrevious" onclick="previousPuzzle()">
+                    <<
+                </button>
+
+                <button class="checkAnswer" onclick="checkAnswer()">
+                    Check Answer
+                </button>
+
+                <button class="puzzleNext" onclick="nextPuzzle()">
+                    >>
+                </button>
             </div>
         </div>
 
