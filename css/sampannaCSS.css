@@ -4,7 +4,7 @@ TESTING
 -------
 */
 
-div, label
+div, label, a
 {
 	/*outline: 2px solid red;*/
 }
@@ -345,13 +345,24 @@ CSS FOR PUZZLE
 	border: 3px solid white;
 }
 
+/* Applying flexbox property and hiding all puzzles by default */
+.puzzle
+{
+	display: none;
+	flex-direction: column;
+	align-items: center;
+	gap: 2vw;
+}
+
+/* Setting display for first puzzle to make it visible */
 #puzzle1
 {
 	display: flex;
-	flex-direction: column;
-	/*justify-content: center;*/
-	align-items: center;
-	gap: 2vw;
+}
+
+#puzzle1, #puzzle3
+{
+	gap: 3vw;
 }
 
 /* Hmm */
@@ -386,3 +397,4 @@ CSS FOR PUZZLE
 	letter-spacing: 0.2vw;
 	text-align: center;
 }
+
