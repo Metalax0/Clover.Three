@@ -1,16 +1,17 @@
 .flex-container{
 	/*outline: 2px solid red;*/
 	display: flex;
-	/*flex-direction: column;*/
-	padding: 1.5%;
-	gap: 20px;
-	height: 93.9%;
+	flex-direction: column;
+	padding: 5% 2% 2% 2%;
+	gap: 30px; //previous value 20
+	height: 100%;
 	background-image: url("../resources/stars.jpg");
-	align-items: center;
+	justify-content: center;
 }
 
 body,html{
 	/*background-color: #FFA37B;*/
+	background-color: black;
 	height: 100%;
 	margin: 0;
 	padding: 0;
@@ -21,13 +22,15 @@ div,p{
 	/*padding:20px;*/
 }
 
-main{
+.top-container{
 	/*outline: 2px solid white;*/
 	padding:2% 3%;
 	display: flex;
 	justify-content: space-between;
 	gap: 5%;
 }
+
+
 
 .resultletters,.resultwords{
 	font-family: 'Prompt', sans-serif;
@@ -84,8 +87,36 @@ button{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
 
+/*
+-----------------
+Bottom Container 
+-----------------
+*/
 
+.bottomcontainer{
+	/*outline: 2px solid white;*/
+	padding:2% 3%;
+	display: flex;
+	width: 89.3vw;
+	height: 40vw;
+	justify-content: space-between;
+	align-items: center;
+	gap: 5%;
+}
+
+.botton-left-container{
+	display: flex;
+	flex-direction: column;
+	height: 30vw;
+}
+
+.bottom-right-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 30vw;
 }
 
 .title-heading{
@@ -98,10 +129,14 @@ button{
 	padding: 0;
 }
 
+
+
 .title-heading-description{
 	font-family: 'Prompt', sans-serif;
 	font-size: 1.4vw;
 	line-height: 5vh;
+	text-align: justify;
+	text-justify: inter-word;
 	color: white;
 	margin: 0;
 	padding: 0;
@@ -194,7 +229,12 @@ a:hover
 	border-bottom: 2px solid;
 }
 
-
+.main_img
+{
+	outline: 5px solid white;
+	width: 37.5vw;
+	height: 60vh;
+}
 
 
 
