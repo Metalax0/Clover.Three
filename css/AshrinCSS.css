@@ -1,0 +1,41 @@
+.container{
+    display:flex;
+    column-gap: 20px;
+    padding-top:  10%;
+    width: 100%;
+}
+.right-col{
+  display:flex;
+  flex-direction: column;
+  width: 20%;
+  margin-left: 5%;
+  flex:5;
+  
+}
+
+
+
+
+.head{
+    margin-bottom: 2%;
+    width: 50%;
+    margin-top: 5%;
+    font-size: 24px;
+
+    
+}
+.body{
+    width: 80%;
+    height: 50vh;
+    font-style: oblique;
+    font-size: 16px;
+    
+}
+
+.left-col{
+    flex:8;
+    text-align: right;
+
+}
+
+
