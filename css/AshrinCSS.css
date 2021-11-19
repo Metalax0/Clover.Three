@@ -66,6 +66,79 @@ img{
     
 }
 
+/* Applying style to entire navigation bar*/
+nav
+{
+	top: 1%;
+	left: 3%;
+	width: 91.7%;
+	position: fixed;
+	background-color: rgb(0,0,0,0.7);
+	border: 0px solid white;
+	border-radius: 20px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.2% 1% 0;
+}
+
+/* Applying style to nagivation bar menu items */
+nav a
+{
+	font-family: 'Prompt', sans-serif;
+	/*font-family: 'Megrim', cursive;*/
+	font-size: 1.2vw;
+	color: white;
+	text-decoration: none;
+}
+
+/* Hover effect on navbar items */
+a:hover
+{
+	color: #0FFF95;
+	font-weight: bold;
+}
+
+/* Applying flex property to navigation menu items*/
+.flex-navmenu
+{
+	display: flex;
+	gap: 9vh;
+}
+
+/* Styling nagivation bar logo (text)*/
+.navbar-logo-text
+{
+	font-family: 'Monoton', cursive;
+	font-size: 1.2vw;
+}
+
+/* First half of title text "CLO" */
+.heading-color
+{
+	color: #0FFF95;
+}
+
+/* Second half of title text "VER" */
+.heading-no-color
+{
+	color: white;
+}
+
+.active_menu
+{
+	color: #0FFF95;
+	border-bottom: 2px solid;
+}
+
+/* .main_img
+{
+	outline: 5px solid white;
+	width: 37.5vw;
+	height: 60vh;
+} */
+
 
 
 
