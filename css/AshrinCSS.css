@@ -30,6 +30,21 @@ div,body{
     justify-content: center;
     width: 45vw;
     height: 30vw;
+    background-color: black;
+}
+.grid{
+    display: grid;
+    background-color: turquoise;
+    width: 350px;
+    height: 350px;
+    grid-template:repeat(3,1fr)/repeat(3,1fr);
+}
+.game{
+    display: flex;
+    border:5px solid white;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
 }
 img{
     width: 43vw;
