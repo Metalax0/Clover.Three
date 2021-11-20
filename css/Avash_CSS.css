@@ -17,7 +17,7 @@ body,html{
 	padding: 0;
 }
 
-div,p{
+div{
 	/*outline: 3px solid darkred;*/
 	/*padding:20px;*/
 }
@@ -46,20 +46,20 @@ button{
 	font-weight: bold;
 	color: white;
 	padding: 0.5% 5%;
-	/*outline: 2px solid white;*/
-	opacity: 0.9;
-	
+	outline: 2px solid white;
+	/*opacity: 0.9;
+	*/
 }
 
 .buttondiv{
 	padding: 10px;
 	display: flex;
 	justify-content: center;
-	}
+}
 
 .result{
 	display: flex;
-	/*justify-content: space-evenly;*/
+	justify-content: space-evenly;
 	justify-content: center;
 	gap: 7.5vw;
 	color: white;
@@ -109,7 +109,12 @@ Bottom Container
 .botton-left-container{
 	display: flex;
 	flex-direction: column;
-	height: 30vw;
+	justify-content: center;
+	/*height: 30vw;*/
+	/*outline: 3px solid red;*/
+	width: 230vw; 
+	height: 60vh;
+	gap: 1vw;
 }
 
 .bottom-right-container{
@@ -117,6 +122,52 @@ Bottom Container
 	flex-direction: column;
 	justify-content: center;
 	height: 30vw;
+}
+
+.coinflipresult{
+	display: flex;
+	justify-content: center;
+	height: 10vw;
+	font-size: 4vw;
+	color: white;
+}
+
+.headandtailcount{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	gap: 0.5vw;
+	font-family: 'Prompt', sans-serif;
+	font-size: 1.5vw;
+	font-weight: bold;
+	color: white;
+}
+
+.btndiv{
+	display: flex;
+	justify-content: center;
+}
+
+.btnFlip{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 12vw;
+	height: 6vh;
+	background-color: #0FFF95;
+
+	font-family: 'Prompt', sans-serif;
+	font-size: 1.5vw;
+	font-weight: bold;
+	color: white;
+
+	border: 3px solid black;
+	border-radius: 0.5vw;
+}
+
+.tossresult{
+	display: flex;
+	align-items: center;
 }
 
 .title-heading{
@@ -232,7 +283,7 @@ a:hover
 .main_img
 {
 	outline: 5px solid white;
-	width: 37.5vw;
+	width: 40vw; 
 	height: 60vh;
 }
 
