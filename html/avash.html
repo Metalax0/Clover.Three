@@ -3,7 +3,12 @@
 <head>
   <meta charset="utf-8">
   <title>Clover.Four | Dr Senior</title>
+
+  <!-- Linking css file -->
   <link rel="stylesheet" type="text/css" href="../css/Avash_CSS.css">
+
+  <!-- Linking js file -->
+    <script src="../js/AvashJS.js"></script>
 
   <!-- Linking Logo in browser title tab -->
     <link rel="icon" href="../resources/logo_c.png" type="image/icon type">
@@ -108,7 +113,21 @@
     <section class="bottomcontainer">
       <!-- Bottom Left Container -->
       <div class="botton-left-container">
-        <img src='../resources/15.jpg' class="main_img">
+        <div class="coinflipresult">
+          <p id="tossResult">JUST FLIP</p>
+        </div>
+
+        <div class="headandtailcount">
+          <p>Heads: </p> 
+          <p id="headcount">0</p>
+          <p>Tails: </p>
+          <p id="tailcount">0</p>
+        </div>
+
+        <div class="btndiv">
+          <button onclick="cointoss()">FLIP IT</button>
+        </div>
+
       </div>
 
       <!-- Bottom Right Container -->
@@ -123,23 +142,6 @@
       </div>  
     </section>
   </div>
-
-  <script>
-    function counting() {
-      let totaletters = document.getElementById("mytextarea").value.length;
-      let totalwords = document.getElementById("mytextarea").value;
-      let text = document.getElementById("mytextarea").value;
-
-      totalwords = totalwords.match( /\w+/g );
-      totalwords = totalwords.length;
-      count = text.split(". ").length;
-
-      document.getElementById("displaylettersresult").innerHTML = totaletters + "&nbsp" + "&nbsp";
-      document.getElementById("displaywordsresult").innerHTML = totalwords + "&nbsp" + "&nbsp";
-      document.getElementById("displaysentenceresult").innerHTML = count;
-      
-    }
-  </script>
 
 </body>
 </html>
