@@ -26,17 +26,20 @@ div,body{
 }
 .left-col{
     display:flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 45vw;
     height: 30vw;
     background-color: black;
+    padding-top: 4vw;
+    gap: 2vw;
 }
 .grid{
     display: grid;
-    background-color: turquoise;
+    background-color: #00E099;
     width: 350px;
-    height: 350px;
+    height: 500px;
     grid-template:repeat(3,1fr)/repeat(3,1fr);
 }
 .game{
@@ -45,6 +48,14 @@ div,body{
     align-items: center;
     justify-content: center;
     font-size: 50px;
+}
+.output{
+    display:flex;
+    gap: 100px;
+    
+}
+.result{
+    padding-bottom: 1vw;
 }
 img{
     width: 43vw;
