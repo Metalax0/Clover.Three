@@ -158,6 +158,13 @@ label
 	gap: 5%;
 }
 
+/* Applying css to all sections of the page */
+.column-right, .column-left
+{
+	width: 50vw;
+	height: 30vw;
+}
+
 .upper-container-landing
 {
 	display: flex;
