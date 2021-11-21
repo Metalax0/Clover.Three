@@ -113,7 +113,7 @@ Bottom Container
 	/*height: 30vw;*/
 	/*outline: 3px solid red;*/
 	width: 230vw; 
-	height: 60vh;
+	height: 68vh;
 	gap: 1vw;
 }
 
@@ -134,13 +134,28 @@ Bottom Container
 
 .headandtailcount{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-evenly;
-	gap: 0.5vw;
+	/*gap: 0.5vw;*/
 	font-family: 'Prompt', sans-serif;
 	font-size: 1.5vw;
 	font-weight: bold;
 	color: white;
+}
+
+.counts{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 5%;
+}
+
+.percents{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 5%;
+
 }
 
 .btndiv{
@@ -168,6 +183,28 @@ Bottom Container
 .tossresult{
 	display: flex;
 	align-items: center;
+}
+
+.totalflips{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 1vw;
+	font-family: 'Prompt', sans-serif;
+	font-size: 1.5vw;
+	font-weight: bold;
+	color: white;
+}
+
+.percentagediv{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 1vw;
+	font-family: 'Prompt', sans-serif;
+	font-size: 1.3vw;
+	font-weight: bold;
+	color: white;
 }
 
 .title-heading{
@@ -210,7 +247,7 @@ textarea{
 -----------------
 Navbar and Footer 
 -----------------
-*/
+
 
 /* Adjusting logo (navbar) dimension */
 
