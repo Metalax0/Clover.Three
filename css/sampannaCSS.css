@@ -141,6 +141,7 @@ button
 	gap: 5%;
 }
 
+/* Applying css to functionality section of the page */
 .parallax-1 .column-right, .parallax-2 .column-left
 {
 	display: flex;
@@ -148,15 +149,17 @@ button
 	align-items: center;
 
 	background-color: #00E099;
-	/*background-color: #9BD1FA;*/
-	/*background-color: #FFEC94;*/
-	/*background-color: #FFF5EE;*/
 	outline: 5px solid white;
 
-	width: 275vw;
-	height: 30vw;
 	gap: 2vw;
 	padding: 1vw 0;
+}
+
+/* Applying css to all sections of the page */
+.column-right, .column-left
+{
+	width: 50vw;
+	height: 30vw;
 }
 
 .deleteButton
