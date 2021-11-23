@@ -150,6 +150,9 @@ a:hover
 	height: 60vh;
 } */
 
-
+.disabledbutton {
+    pointer-events: none;
+    opacity: 0.4;
+}
 
 

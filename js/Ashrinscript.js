@@ -14,7 +14,7 @@ p1.addEventListener('click', (e) => {
         document.getElementById("p1").innerHTML = "X";
         flag = false;
         document.getElementById("p10").innerHTML = "0's turn";
-        
+
     }
     else {
         document.getElementById("p1").innerHTML = "O";
@@ -139,53 +139,79 @@ function gameover() {
     var p8 = document.getElementById("p8").innerHTML;
     var p9 = document.getElementById("p9").innerHTML;
     if ((p1 == 'X' && p2 == 'X' && p3 == 'X') || (p1 == 'O' && p2 == "O" && p3 == 'O')) {
-        document.getElementById("p10").innerHTML = "You win";
-        document.getElementById("p1").style.background="red";
-        document.getElementById("p2").style.background="red";
-        document.getElementById("p3").style.background="red";
-        // p1.style.backgroundColor = "red";
+        document.getElementById("p10").innerHTML = "Game over";
+        document.getElementById("p1").style.background = "red";
+        document.getElementById("p2").style.background = "red";
+        document.getElementById("p3").style.background = "red";
+        document.getElementById("grid").addEventListener('click', (e) => {
+            document.getElementById("grid").classList.add("disabledbutton")
+        })
     }
     if ((p4 == 'X' && p5 == 'X' && p6 == 'X') || (p4 == 'O' && p5 == "O" && p6 == 'O')) {
-        document.getElementById("p10").innerHTML = "You win";
-        document.getElementById("p4").style.background="red";
-        document.getElementById("p5").style.background="red";
-        document.getElementById("p6").style.background="red";
-    }
-    if ((p7 == 'X' && p8 == 'X' && p9 == 'X') || (p7 == 'O' && p8 == "O" && p9 == 'O')) {
-        document.getElementById("p10").innerHTML = "You win";
-        document.getElementById("p7").style.background="red";
-        document.getElementById("p8").style.background="red";
-        document.getElementById("p9").style.background="red";
-    }
-    if ((p1 == 'X' && p5 == 'X' && p9 == 'X') || (p1 == 'O' && p5 == "O" && p9 == 'O')) {
-        document.getElementById("p10").innerHTML = "You win";
-        document.getElementById("p1").style.background="red";
-        document.getElementById("p5").style.background="red";
-        document.getElementById("p9").style.background="red";
-    }
-    if ((p1 == 'X' && p4 == 'X' && p7 == 'X') || (p1 == 'O' && p4 == "O" && p7 == 'O')) {
-        document.getElementById("p10").innerHTML = "You win";
-        document.getElementById("p1").style.background="red";
-        document.getElementById("p4").style.background="red";
-        document.getElementById("p7").style.background="red";
-    }
-    if ((p2 == 'X' && p5 == 'X' && p8 == 'X') || (p2 == 'O' && p5 == "O" && p8 == 'O')) {
-        document.getElementById("p10").innerHTML = "You win";
-        document.getElementById("p2").style.background="red";
-        document.getElementById("p5").style.background="red";
-        document.getElementById("p8").style.background="red";
-    }
-    if ((p3 == 'X' && p6 == 'X' && p9 == 'X') || (p3 == 'O' && p6 == "O" && p9 == 'O')) {
-        document.getElementById("p10").innerHTML = "You win";
-        document.getElementById("p3").style.background="red";
-        document.getElementById("p6").style.background="red";
-        document.getElementById("p9").style.background="red";
-    }
-    if ((p3 == 'X' && p5 == 'X' && p7 == 'X') || (p3 == 'O' && p5 == "O" && p7 == 'O')) {
-        document.getElementById("p10").innerHTML = "You win";
-        document.getElementById("p3").style.background="red";
-        document.getElementById("p5").style.background="red";
-        document.getElementById("p7").style.background="red";
+        document.getElementById("p10").innerHTML = "Game over"
+        document.getElementById("p4").style.background = "red";
+        document.getElementById("p5").style.background = "red";
+        document.getElementById("p6").style.background = "red";
+        document.getElementById("grid").addEventListener('click', (e) => {
+            document.getElementById("grid").classList.add("disabledbutton")
+        })
 
     }
-}
+    if ((p7 == 'X' && p8 == 'X' && p9 == 'X') || (p7 == 'O' && p8 == "O" && p9 == 'O')) {
+        document.getElementById("p10").innerHTML = "Game over";
+        document.getElementById("p7").style.background = "red";
+        document.getElementById("p8").style.background = "red";
+        document.getElementById("p9").style.background = "red";
+        document.getElementById("grid").addEventListener('click', (e) => {
+            document.getElementById("grid").classList.add("disabledbutton")
+        })
+    }
+    if ((p1 == 'X' && p5 == 'X' && p9 == 'X') || (p1 == 'O' && p5 == "O" && p9 == 'O')) {
+        document.getElementById("p10").innerHTML = "Game over";
+        document.getElementById("p1").style.background = "red";
+        document.getElementById("p5").style.background = "red";
+        document.getElementById("p9").style.background = "red";
+        document.getElementById("grid").addEventListener('click', (e) => {
+            document.getElementById("grid").classList.add("disabledbutton")
+        })
+    }
+    if ((p1 == 'X' && p4 == 'X' && p7 == 'X') || (p1 == 'O' && p4 == "O" && p7 == 'O')) {
+        document.getElementById("p10").innerHTML = "Game over";
+        document.getElementById("p1").style.background = "red";
+        document.getElementById("p4").style.background = "red";
+        document.getElementById("p7").style.background = "red";
+        document.getElementById("grid").addEventListener('click', (e) => {
+            document.getElementById("grid").classList.add("disabledbutton")
+        })
+    }
+    if ((p2 == 'X' && p5 == 'X' && p8 == 'X') || (p2 == 'O' && p5 == "O" && p8 == 'O')) {
+        document.getElementById("p10").innerHTML = "Game over";
+        document.getElementById("p2").style.background = "red";
+        document.getElementById("p5").style.background = "red";
+        document.getElementById("p8").style.background = "red";
+        document.getElementById("grid").addEventListener('click', (e) => {
+            document.getElementById("grid").classList.add("disabledbutton")
+        })
+    }
+    if ((p3 == 'X' && p6 == 'X' && p9 == 'X') || (p3 == 'O' && p6 == "O" && p9 == 'O')) {
+        document.getElementById("p10").innerHTML = "Game over";
+        document.getElementById("p3").style.background = "red";
+        document.getElementById("p6").style.background = "red";
+        document.getElementById("p9").style.background = "red";
+        document.getElementById("grid").addEventListener('click', (e) => {
+            document.getElementById("grid").classList.add("disabledbutton")
+        })
+    }
+    if ((p3 == 'X' && p5 == 'X' && p7 == 'X') || (p3 == 'O' && p5 == "O" && p7 == 'O')) {
+        document.getElementById("p10").innerHTML = "Game over";
+        document.getElementById("p3").style.background = "red";
+        document.getElementById("p5").style.background = "red";
+        document.getElementById("p7").style.background = "red";
+        document.getElementById("grid").addEventListener('click', (e) => {
+            document.getElementById("grid").classList.add("disabledbutton")
+        })
+    }
+
+    }
+
+
